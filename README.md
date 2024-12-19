@@ -15,16 +15,21 @@ and healthcare processes. Key components of the dataset are shown as follows:
 
 • DIAGNOSES_ICD: Includes International Classification of Diseases (ICD) codes for
 primary and secondary diagnoses.
+
 • PROCEDURES_ICD: Contains ICD codes for medical procedures performed during ICU
 stays.
+
 • PATIENTS: Provides demographic information such as age, gender, and ethnicity.
+
 • ADMISSIONS: Captures admission-specific details, including admission and discharge
 times, admission type, and insurance information.
+
 • LABEVENTS: Contains laboratory test results linked to patient admissions, including test
 names, results, and timestamps.
+
 • Lab_Item_Codes.txt: Offers descriptions or categories of laboratory items, aiding in the
 interpretation of lab test results.
-5
+
 • Error-Prone Codes: Lists diagnosis codes associated with outcomes that are prone to
 errors in recognition or treatment.
 
