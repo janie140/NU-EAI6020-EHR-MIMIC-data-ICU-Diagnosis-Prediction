@@ -37,4 +37,34 @@ The MIMIC-III dataset is particularly suited for AMI prediction due to its inclu
 data, such as lab results, diagnostic codes, and treatment procedures. By analyzing trends and
 patterns within this data, ML models can identify early indicators of AMI risk. The inclusion of
 demographic and admission details further enables stratification of risk based on patient-specific
-factors
+factors.
+
+Conclusion
+
+This project on early prediction of acute myocardial infarction (AMI) has demonstrated the
+effectiveness of advanced machine learning models, particularly XGBoost and Histogram
+Gradient Boosting, in predicting AMI risk. Both models outperformed Random Forest in terms of
+overall predictive ability, with Histogram Gradient Boosting achieving the highest Area Under the
+Curve (AUC) of 0.96, indicating superior discrimination between classes. Both XGBoost and
+Histogram Gradient Boosting exhibited nearly identical accuracy rates of approximately 0.88,
+showcasing its potential as a strong predictive tool. Random Forest, while demonstrating high
+specificity (0.97), struggled with limited sensitivity (0.51), undermining its utility in effectively
+detecting AMI cases.
+
+From a clinical perspective, the results emphasize the need for careful model selection based on
+the diagnostic priorities of healthcare providers. For tasks that require a balance between correctly
+identifying both AMI and non-AMI cases, XGBoost and Histogram Gradient Boosting are ideal. In
+settings where ruling out non-MI cases is critical, Histogram Gradient Boosting or Random Forest
+may offer significant value. Furthermore, these models offer valuable insights into the underlying
+factors contributing to AMI risk, such as key biomarkers like Creatine Kinase (CK), age, glucose
+levels, fibrinogen, and other clinical parameters. These factors provide a foundation for future
+research aimed at refining AMI prediction models and exploring new strategies for prevention and
+treatment optimization.
+
+Looking ahead, future work could explore the potential of combining these models through
+ensemble methods to further enhance predictive performance. By incorporating multiple models,
+we could potentially improve overall accuracy and reliability, making early AMI prediction more
+robust and clinically actionable. There is still room to apply the LSTM deep learning model to the
+time series sequential data. However, tree-based and ensemble models also perform well in
+predicting the diagnosis, with less complexity in layers and computation. Additionally, XGBoost
+offers greater interpretability through feature importance extraction.
